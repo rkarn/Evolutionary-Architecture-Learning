@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cassandra-burstable
+  labels:
+    app: cassandra-burstable
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cassandra-burstable
+  template:
+    metadata:
+      labels:
+        app: cassandra-burstable
+    spec:
+      volumes:
+      - name: shared-data
+        emptyDir: {}
+      containers:
+      - name: cassandra-burstable
+        image: rupeshrajkarn/cassandra:v2
+        resources:
+          limits:
+            memory: "9000Mi"
+            cpu: "1500m"
+          requests:
+            memory: "2000Mi"
+            cpu: "250m"
