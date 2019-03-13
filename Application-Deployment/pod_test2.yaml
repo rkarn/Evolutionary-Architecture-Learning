@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pod-test2
+  labels:
+    app: pod-test2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pod-test2
+  template:
+    metadata:
+      labels:
+        app: pod-test2
+    spec:
+      volumes:
+      - name: shared-data
+        emptyDir: {}
+      containers:
+      - name: pod-test2
+        image: ubuntu:new
