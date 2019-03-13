@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cassandra-guranteed
+  labels:
+    app: cassandra-guranteed
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cassandra-guranteed
+  template:
+    metadata:
+      labels:
+        app: cassandra-guranteed
+    spec:
+      volumes:
+      - name: shared-data
+        emptyDir: {}
+      containers:
+      - name: cassandra-guranteed
+        image: rupeshrajkarn/cassandra:v2
+        resources:
+          limits:
+            memory: "9000Mi"
+            cpu: "6000m"
+          requests:
+            memory: "9000Mi"
+            cpu: "6000m"
