@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cassandra-besteffort
+  labels:
+    app: cassandra-besteffort
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cassandra-besteffort
+  template:
+    metadata:
+      labels:
+        app: cassandra-besteffort
+    spec:
+      volumes:
+      - name: shared-data
+        emptyDir: {}
+      containers:
+      - name: cassandra-besteffort
+        image: rupeshrajkarn/cassandra:v2
+        
