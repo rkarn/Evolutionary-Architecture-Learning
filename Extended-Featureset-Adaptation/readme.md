@@ -1,1 +1,1 @@
-#Featureset expansion during progressive learning.
+Featureset expansion during progressive learning.
