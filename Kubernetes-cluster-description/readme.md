@@ -1,3 +1,7 @@
+Kubernetes cluster is deployed from:
+
+    https://github.com/kubernetes/minikube
+
 Useful descriptions on Kubernetes cluster and compute resource:
 
     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/#resource-types
