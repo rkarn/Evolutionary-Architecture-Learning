@@ -8,6 +8,4 @@ For datase application are choosen. They are:
     4. ETCD https://github.com/brianredbeard/stretcd 
 
 
-An article on optimization with python is available at:
 
-    https://developers.google.com/optimization/introduction/python 
