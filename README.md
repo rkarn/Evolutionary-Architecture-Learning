@@ -1,6 +1,6 @@
 # Evolutionary-Architecture-Learning
 
-The repository contains the source code to reproduce the results of `Chapter-6` of the Phd thesis title `Machine Learning Methods for the Automated Management of Cloud Computing Workloads`. The thesis can be accessed from `https://www.dropbox.com/scl/fi/n3np7gb66xfwstjbyzhls/PhD-thesis-2019-Thesis.pdf?rlkey=o4uboshsna5r9of0uhvqfu54z&dl=0`
+The repository contains the source code to reproduce the results of `Chapter-6` of the Phd thesis title `Machine Learning Methods for the Automated Management of Cloud Computing Workloads`. The thesis can be accessed from `https://www.dropbox.com/scl/fi/n3np7gb66xfwstjbyzhls/PhD-thesis-2019-Thesis.pdf?rlkey=o4uboshsna5r9of0uhvqfu54z&dl=0`  . The folder structure (or name) is as per the subsection of `chapter-6`.
 
 Four datase applications are choosen. They are:
 
